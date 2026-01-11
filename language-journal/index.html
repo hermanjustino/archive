@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="AI Cultural Journalist - Analyzing AAVE in cultural domains">
+  <title>AI Cultural Journalist</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app">
+    <nav class="main-navigation">
+      <div class="nav-container">
+        <div class="brand">
+          <h1>Cultural AI Journalist</h1>
+        </div>
+        
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        
+        <ul class="nav-links">
+          <li class="active">
+            <button onclick="navigate('aave-analysis')">AAVE Analysis</button>
+          </li>
+          <li>
+            <button onclick="navigate('dashboard')">Dashboard</button>
+          </li>
+          <li>
+            <button onclick="navigate('trends')">Trend Discovery</button>
+          </li>
+          <li>
+            <button onclick="navigate('articles')">Article Generator</button>
+          </li>
+          <li>
+            <button onclick="navigate('about')">About</button>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="responsive-container">
+      <!-- AAVE Analysis View (default) -->
+      <div id="aave-analysis" class="view active">
+        <h2>AAVE Analysis Dashboard</h2>
+        
+        <div class="dashboard-metrics">
+          <div class="metric-card">
+            <h3>AAVE Prevalence</h3>
+            <div class="metric-value">42.7%</div>
+          </div>
+          <div class="metric-card">
+            <h3>Content Analyzed</h3>
+            <div class="metric-value">384</div>
+          </div>
+          <div class="metric-card">
+            <h3>Time Period</h3>
+            <div class="metric-value">March 2025</div>
+          </div>
+        </div>
+        
+        <div class="dashboard-sections">
+          <div class="section">
+            <h3>AAVE Terms Usage by Source</h3>
+            <div class="chart-placeholder">
+              <div class="bar-container">
+                <div class="bar-label">News</div>
+                <div class="bar" style="width: 65%"></div>
+                <div class="bar-value">65%</div>
+              </div>
+              <div class="bar-container">
+                <div class="bar-label">Academic</div>
+                <div class="bar" style="width: 35%; background-color: #4CAF50;"></div>
+                <div class="bar-value">35%</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="section">
+            <h3>Common AAVE Terms</h3>
+            <ul class="term-list">
+              <li class="term-item">
+                <span class="term">code-switching</span>
+                <span class="term-count">32</span>
+              </li>
+              <li class="term-item">
+                <span class="term">vernacular expression</span>
+                <span class="term-count">28</span>
+              </li>
+              <li class="term-item">
+                <span class="term">linguistic diversity</span>
+                <span class="term-count">24</span>
+              </li>
+              <li class="term-item">
+                <span class="term">cultural discourse</span>
+                <span class="term-count">19</span>
+              </li>
+              <li class="term-item">
+                <span class="term">dialect analysis</span>
+                <span class="term-count">15</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard View -->
+      <div id="dashboard" class="view">
+        <h2>Cultural Insights Dashboard</h2>
+        <p class="placeholder-message">This dashboard shows an overview of cultural content across different sources.</p>
+      </div>
+
+      <!-- Trends View -->
+      <div id="trends" class="view">
+        <h2>Trend Discovery</h2>
+        <p class="placeholder-message">This view helps identify emerging cultural trends across different media.</p>
+      </div>
+
+      <!-- Articles View -->
+      <div id="articles" class="view">
+        <h2>Article Generator</h2>
+        <p class="placeholder-message">Generate cultural analysis articles based on emerging trends.</p>
+      </div>
+
+      <!-- About View -->
+      <div id="about" class="view">
+        <div class="about-page">
+          <section class="about-section mission-section">
+            <h3>Project Overview</h3>
+            <p>
+              The AI Cultural Journalist is a specialized tool for analyzing African American Vernacular English (AAVE) usage across different cultural domains, news sources, and academic contexts.
+            </p>
+            <p>
+              Our platform aggregates content from multiple sources, analyzes linguistic patterns, identifies cultural trends, and generates insightful articles that highlight the significance and evolution of AAVE in various contexts.
+            </p>
+          </section>
+          
+          <section class="about-section features-section">
+            <h3>Key Features</h3>
+            <ul class="features-list">
+              <li>
+                <strong>AAVE Analysis Dashboard:</strong> Comprehensive analysis of AAVE usage patterns across different platforms and contexts.
+              </li>
+              <li>
+                <strong>Cultural Insights Dashboard:</strong> Visualize content distribution across different cultural domains and sources.
+              </li>
+              <li>
+                <strong>Trend Discovery:</strong> Identify emerging topics and trends in cultural discourse.
+              </li>
+              <li>
+                <strong>Article Generator:</strong> Create AI-generated cultural analysis articles based on identified trends.
+              </li>
+            </ul>
+          </section>
+          
+          <section class="about-section domains-section">
+            <h3>Cultural Domains</h3>
+            <p>Our analysis focuses on several key cultural domains:</p>
+            <ul class="domain-list">
+              <li>Literature & Publishing</li>
+              <li>Academia & Education</li>
+              <li>News Media</li>
+              <li>Entertainment & Arts</li>
+              <li>Social Commentary</li>
+            </ul>
+            <p>
+              By analyzing content across these domains, we can identify patterns in how AAVE is discussed, represented, and used in different contexts.
+            </p>
+          </section>
+          
+          <section class="about-section research-section">
+            <h3>Research Foundation</h3>
+            <p>
+              This project builds upon pioneering linguistic research on African American Vernacular English, particularly the work "LOW-RESOURCE LANGUAGE MODEL WITH CYBER DEFENSE" (2022).
+            </p>
+            <p>
+              Our goal is to expand to other languages from the African diaspora globally, including Caribbean Creole languages, West African dialects, Black British linguistic patterns, and Afro-Brazilian Portuguese variations.
+            </p>
+          </section>
+          
+          <section class="about-section tech-section">
+            <h3>Technology Stack</h3>
+            <div class="tech-grid">
+              <div class="tech-category">
+                <h4>Frontend</h4>
+                <div class="tech-badges">
+                  <span class="tech-badge">React</span>
+                  <span class="tech-badge">TypeScript</span>
+                  <span class="tech-badge">Chart.js</span>
+                </div>
+              </div>
+              <div class="tech-category">
+                <h4>Backend</h4>
+                <div class="tech-badges">
+                  <span class="tech-badge">Node.js</span>
+                  <span class="tech-badge">Express.js</span>
+                </div>
+              </div>
+              <div class="tech-category">
+                <h4>AI & Analysis</h4>
+                <div class="tech-badges">
+                  <span class="tech-badge">Gemini API</span>
+                  <span class="tech-badge">NLP</span>
+                </div>
+              </div>
+              <div class="tech-category">
+                <h4>Data Sources</h4>
+                <div class="tech-badges">
+                  <span class="tech-badge">News API</span>
+                  <span class="tech-badge">Academic Sources</span>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    function navigate(view) {
+      // Hide all views
+      document.querySelectorAll('.view').forEach(el => {
+        el.classList.remove('active');
+      });
+      
+      // Show selected view
+      document.getElementById(view).classList.add('active');
+      
+      // Update active navigation item
+      document.querySelectorAll('.nav-links li').forEach(el => {
+        el.classList.remove('active');
+      });
+      
+      // Find and set active nav item
+      const navItems = document.querySelectorAll('.nav-links li');
+      for(let i = 0; i < navItems.length; i++) {
+        const button = navItems[i].querySelector('button');
+        if(button && button.getAttribute('onclick').includes(view)) {
+          navItems[i].classList.add('active');
+          break;
+        }
+      }
+    }
+    
+    // Mobile menu toggle
+    document.querySelector('.hamburger-menu').addEventListener('click', function() {
+      this.classList.toggle('active');
+      document.querySelector('.nav-links').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

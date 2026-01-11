@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herman - Data Scientist</title>
+  <link rel="icon" href="../favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../styles/info.css">
+  <link rel="stylesheet" href="../styles/nav.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+
+  <link rel="icon" href="../assets/icon-light-mode.svg?v=1.0" type="image/svg+xml">
+  <link rel="icon" href="../assets/icon-light-mode.svg?v=1.0" type="image/png">
+  <link rel="apple-touch-icon" href="../assets/icon-light-mode.svg?v=1.0">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQHZ2KWBYM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GQHZ2KWBYM');
+  </script>
+</head>
+
+<body class="dark-mode">
+  <nav class="navbar">
+    <a href="#home" class="navbar-item">
+      <img src="../assets/icon-dark-mode.svg" alt="Dark Mode Icon" class="brand-icon dark-mode-icon">
+      <img src="../assets/icon-light-mode.svg" alt="Light Mode Icon" class="brand-icon light-mode-icon">
+    </a>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#portfolio">Portfolio</a></li>
+        <li><a href="../index.html#contact">Contact/About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="controls">
+    <select id="infographicSelector">
+      <option value="https://www.canva.com/design/DAGU43-1mVw/MyVLB1sU2WV66N2P_7ZFrw/view?embed">Social Engineering</option>
+      <option value="https://www.canva.com/design/DAGU-rjQSvs/zoTy5aChFdmB9Wx6EBMdfw/view?embed">Cryptography Demystified</option>
+      <!-- Add more options as needed -->
+    </select>
+  </div>
+
+  <div class="container">
+    <iframe id="infographicFrame" loading="lazy" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>
+  </div>
+
+  <!--======= Footer =====-->
+
+  <footer class="footer">
+    <p>© Herman Justino 2024</p>
+  </footer>
+
+  <canvas id="neural-network"></canvas>
+  <script src="../scripts/nav.js?v=1.0"></script>
+  <script src="../scripts/neural-network.js?v=1.0"></script>
+  <script>
+    document.getElementById('infographicSelector').addEventListener('change', function () {
+      const selectedValue = this.value;
+      document.getElementById('infographicFrame').src = selectedValue;
+      updateURL(selectedValue);
+    });
+
+    // Set initial iframe source based on URL parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialInfographic = urlParams.get('infographic');
+    if (initialInfographic) {
+      document.getElementById('infographicFrame').src = initialInfographic;
+      document.getElementById('infographicSelector').value = initialInfographic;
+    } else {
+      const defaultInfographic = document.getElementById('infographicSelector').value;
+      document.getElementById('infographicFrame').src = defaultInfographic;
+    }
+
+    function updateURL(infographic) {
+      const url = new URL(window.location);
+      url.searchParams.set('infographic', infographic);
+      window.history.pushState({}, '', url);
+    }
+  </script>
+</body>
+</html>

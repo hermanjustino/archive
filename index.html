@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Herman - Data Professional</title>
+  <link rel="icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="./styles/nav.css">
+  <link rel="stylesheet" href="./styles/featured.css">
+  <link rel="stylesheet" href="./styles/timeline.css">
+
+  <link rel="icon" href="./assets/icon-light-mode.svg?v=1.0" type="image/svg+xml">
+  <link rel="icon" href="./assets/icon-light-mode.svg?v=1.0" type="image/png">
+  <link rel="apple-touch-icon" href="./assets/icon-light-mode.svg?v=1.0">
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQHZ2KWBYM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-GQHZ2KWBYM');
+  </script>
+
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="Herman Justino - Portfolio">
+  <meta property="og:description"
+    content="Welcome to Herman Justino's portfolio website. Explore my projects and learn more about my work.">
+  <meta property="og:image" content="https://github.com/user-attachments/assets/79b06b29-83cf-4505-b4c2-ba1774c643c1">
+  <meta property="og:url" content="https://hermanjustino.com">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Herman Justino Portfolio">
+  <meta property="og:locale" content="en_US">
+</head>
+
+<body class="dark-mode">
+  <nav class="navbar">
+    <a href="#home" class="navbar-item">
+      <img src="./assets/icon-dark-mode.svg" alt="Dark Mode Icon" class="brand-icon dark-mode-icon">
+      <img src="./assets/icon-light-mode.svg" alt="Light Mode Icon" class="brand-icon light-mode-icon">
+    </a>
+    <a href="#" class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#featured">Featured</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact/About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="center-content">
+    <div class="bio-container" id="home">
+      <div class="bio">
+        <h1>Herman Justino</h1>
+        <p class="typewriter">Data Professional</p>
+        <hr>
+        <div class="social-links">
+          <a href="https://github.com/hermanjustino" target="_blank">
+            <img src="./assets/github-dark.svg" alt="GitHub" class="icon">
+          </a>
+          <a href="https://www.linkedin.com/in/hermanjustino/" target="_blank">
+            <img src="./assets/linkedin-dark.svg" alt="LinkedIn" class="icon">
+          </a>
+        </div>
+        <p class="bio-paragraph">I'm a data professional with experience across
+          startups and enterprise systems—focused on health data, recommender
+          systems, and responsible AI. I build full-stack applications and
+          consult on tech projects that bridge complex data with human-centered design.
+        </p>
+      </div>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="content">
+          <div class="dot"></div>
+          <h3>Founding Engineer @ HJ Data Consulting</h3>
+          <p>Building full-stack applications and consult on tech projects that bridge complex data with human-centered
+            design.</p>
+          <p>2024 – Present</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="content">
+          <div class="dot"></div>
+          <h3>Full Stack Software Engineer @ Canadian Bank Note Company Ltd.</h3>
+          <p>2021 – 2024</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="content">
+          <div class="dot"></div>
+          <h3>Database Administrator @ Athletics Ontario</h3>
+          <p>2020 – 2021</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Featured Projects Section -->
+    <div class="featured-container">
+      <h1 id="featured">Featured</h1>
+      <div id="featured-projects" class="featured-projects-section">
+        <!-- Featured project cards will be generated here -->
+      </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div class="portfolio-container">
+      <h1 id="portfolio">Portfolio</h1>
+      <h4>Some of the projects I've been working on</h3>
+        <div class="filter-bar">
+          <div class="tabs">
+            <button class="tab-button active" data-tab="type">Type</button>
+            <button class="tab-button" data-tab="tools">Tools</button>
+          </div>
+          <div class="tab-content" id="type">
+            <!-- Filter options for type will be generated here -->
+          </div>
+          <div class="tab-content" id="tools" style="display: none;">
+            <!-- Filter options for tools will be generated here -->
+          </div>
+        </div>
+        <div id="projects" class="projects-section"></div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="contact-section">
+      <h1>Contact</h1>
+      <p class="contact-paragraph">If you want like to get in touch, don't be shy. Feel free to connect with me on
+        LinkedIn or check
+        out my GitHub profile.</p>
+      <div class="contact-buttons">
+        <a href="https://www.linkedin.com/in/hermanjustino/" target="_blank" class="contact-button">LinkedIn</a>
+        <a href="https://github.com/hermanjustino" target="_blank" class="contact-button">GitHub</a>
+      </div>
+    </div>
+
+    <hr>
+
+    <!--Picture and Paragraph Section -->
+    <div class="about-me">
+      <img src="./assets/Herman Justino.webp" alt="Herman Justino" class="about-me-pic">
+      <p class="about-me-paragraph">I'm a digital native with a curiosity for how technology shapes society. Born in
+        Angola and raised in Toronto, I approach my work through the lens of practical innovation.
+
+        <br>Before graduate school, I worked on critical systems for public and private sectors at the Canadian Bank
+        Note Company.
+
+        <br><br>Today, I'm pursuing a master's in data science with a growing interest in health informatics and AI for
+        public good. My consulting work includes everything from interactive dashboards to full-stack startup MVPs.
+
+        <br>Outside of work, you can catch me jogging, strumming guitar chords, or adding to my Duolingo streak.
+      </p>
+    </div>
+  </div>
+
+  <div id="project-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h1 id="modal-title"></h1> <!-- Title of the project -->
+      <img id="modal-primary-image" src="" alt="Primary Image">
+      <h2 id="modal-headline"></h2>
+      <a id="modal-app-link" href="#" target="_blank" class="modal-link">View App</a>
+      <p id="modal-description"></p>
+      <img id="modal-secondary-image" src="" alt="Secondary Image">
+      <div class="read-more">
+        <a id="modal-github-link" href="#" target="_blank" class="modal-link">GitHub</a>
+        <a id="modal-notebook-link" href="#" target="_blank" class="modal-link">Notebook</a>
+        <a id="modal-app-link-bottom" href="#" target="_blank" class="modal-link">View App</a>
+      </div>
+    </div>
+    <!-- Add Navigation Arrows -->
+    <button id="prev-arrow" class="nav-arrow prev-arrow">&lt;</button>
+    <button id="next-arrow" class="nav-arrow next-arrow">&gt;</button>
+  </div>
+
+  <!--======= Footer =====-->
+
+  <footer class="footer">
+    <p>© Herman Justino <span id="currentYear"></span></p>
+    <div class="toggle-container">
+      <input type="checkbox" id="toggle-mode" class="toggle-switch">
+      <label for="toggle-mode" class="toggle-label"></label>
+    </div>
+  </footer>
+
+  <canvas id="neural-network"></canvas>
+  <script src="./scripts/neural-network.js?v=1.0"></script>
+  <script src="./scripts/projects.js?v=1.0"></script>
+  <script src="./scripts/nav.js?v=1.0"></script>
+  <script src="./scripts/featured.js?v=1.0"></script>
+  <script src="./scripts/timeline.js?v=1.0"></script>
+</body>
+
+</html>

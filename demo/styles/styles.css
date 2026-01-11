@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgb(26, 26, 26), rgba(255, 255, 255, 0.5));
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0 20px; /* Add some padding to prevent the links from touching the edges of the screen */
+}
+
+.link {
+    margin: 20px;
+    padding: 10px;
+    background-color: none;
+    text-align: center;
+    border-radius: 50px;
+    width: 60%; /* Default to 65% width */
+    animation: fall 2s ease-out forwards;
+    transition: background-color 0.3s ease, border 0.3s ease;
+    border: 1px solid white;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.link-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-grow: 1;
+    font-size: larger;
+    text-decoration: none;
+}
+
+
+.link-image {
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the image round */
+    margin-right: 10px; /* Adds some space between the image and the link text */
+}
+
+.link:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: gray;
+}
+
+/* For iPad screens */
+@media only screen and (max-width: 768px) {
+    .link {
+        width: 70%;
+    }
+}
+
+/* For mobile screens */
+@media only screen and (max-width: 480px) {
+    .link {
+        width: 80%;
+    }
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flipbook</title>
+    <link rel="stylesheet" type="text/css" href="styles/book.css">
+</head>
+
+<body>
+
+    <div class="book">
+        <input type="checkbox" id="c1">
+        <input type="checkbox" id="c2">
+        <input type="checkbox" id="c3">
+        <input type="checkbox" id="c4">
+        <input type="checkbox" id="c5">
+
+        <div class="bb"></div>
+
+        <div id="cover"></div>
+        <div class="flip-book">
+
+            <div class="flip" id="p1">
+                <div class="back" style="">
+
+                    <img src="assets/405508050_1022263535661617_3878738414576117123_n.jpg" class="p2"
+                        id="first_page_image">
+                    <div class="intro_text">
+                        <h1>RCHIVE Fashion Club</h1>
+                        <p>space for fashion enthusiasts</p>
+                        <p>Hosting events for the creative community</p>
+                    </div>
+
+                    <label class="back-btn" for="c1">&#171;</label>
+                </div>
+                <div class="front"
+                    style="@keyframes shimmer {
+                    0% {
+                        background-position: -1000px 0;
+                    }
+                    100% {
+                        background-position: 1000px 0;
+                    }
+                }
+                height: 550px; width: 400px; 
+                background: rgb(112, 128, 144);
+                animation: shimmer 2s infinite linear;
+                background: linear-gradient(to right, rgb(112, 128, 144) 25%, rgb(181, 181, 173) 50%, rgb(112, 128, 144) 75%); color:white;">
+                    <img src="assets/logo.png" alt="R Chive Logo" class="logo"> <p id="title">The LookBook</p>
+                    <img src="assets/395370732_334694889102869_5357871685341357950_n.jpg" alt="front_image_eye"
+                        class="front_image" id="front_image">
+                    <label class="next-btn" for="c1" style="color:white;border:1px solid white;">&#187;</label>
+                </div>
+            </div>
+
+            <div class="flip" id="p2">
+                <div class="back" id="third_page">
+
+                    <img src="assets/428463928_18031006213870193_8580049708983795719_n.jpg" class="p2"
+                        id="third_page_image">
+                    <label class="back-btn" for="c2">&#171;</label>
+                </div>
+                <div class="front" id="second_page">
+                    <img src="assets/424720662_18029154424870193_7377596087930334939_n.jpg"
+                    id="second_page_image">
+                    <label class="next-btn" for="c2">&#187;</label>
+                </div>
+            </div>
+
+            <div class="flip" id="p3">
+                <div class="back" id="fifth_page">
+
+                    <img src="assets/409845304_18023664730870193_6076393647025800215_n.jpg" class="fifth_page_image">
+                    <label class="back-btn" for="c3">&#171;</label>
+                </div>
+                <div class="front" id="fourth_page">
+                    <img src="assets/416745058_18026179711870193_1757446907713384513_n.jpg"
+                        id="fourth_page_founder_image_one">
+                    <img src="assets/412902237_18024538858870193_413597359157230934_n.jpg"
+                        id="fourth_page_founder_image_two">
+                    <div class="founders_img_textbox" data-text="The Space">Founders</div>
+                    <label class="next-btn" for="c3">&#187;</label>
+                </div>
+            </div>
+
+            <div class="flip" id="p4">
+                <div class="back">
+
+                    <img src="assets/423778881_18028945912870193_1032181527418305758_n.jpg" id="page_7_first_img">
+                    <label class="back-btn" for="c4">&#171;</label>
+                </div>
+
+                <div class="front" id="sixth_page">
+                    <img src="assets/397538861_1437755057097030_2568080520708343572_n.jpg" id="page_6_image">
+                    <div class="friends_text">
+                        <h1>Friends</h1>
+                        <h1>of RCHIVE</h1>
+                    </div>
+                    <label class="next-btn" for="c4">&#187;</label>
+                </div>
+            </div>
+
+            <div class="flip" id="p5">
+                <div class="back"
+                    style="
+                    @keyframes shimmer {
+                    0% {
+                        background-position: -1000px 0;
+                    }
+                    100% {
+                        background-position: 1000px 0;
+                    }
+                }
+                color:white; 
+                background: rgb(112, 128, 144);
+                animation: shimmer 2s infinite linear;
+                background: linear-gradient(to right, rgb(112, 128, 144) 25%, rgb(181, 181, 173) 50%, rgb(112, 128, 144) 75%); ">
+                    End of the book
+                    <label class="back-btn" for="c5" style="color:white;border:1px solid white;">&#171;</label>
+                </div>
+                <div class="front" style="height: 550px; width: 400px;">
+
+                    <div class="p8" id="eighth_page">
+                        <img src="assets/415523055_18026385322870193_1930285135072790388_n.jpg" id="eighth_page_space_image">
+                        <div class="space_img_textbox" data-text="The Space">The Space</div>
+                    </div>
+                    <label class="next-btn" for="c5">&#187;</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

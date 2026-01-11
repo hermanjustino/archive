@@ -1,0 +1,201 @@
+body {
+  background: #801638;
+}
+body,
+body > * {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+}
+* {
+  transition: all 0.3s ease 0s;
+}
+/* Colours */
+::selection {
+  background: #000 !important;
+  color: #fff !important;
+}
+::-moz-selection {
+  background: #000 !important;
+  color: #fff !important;
+}
+body > div + div {
+  background: #894236;
+}
+body > div + div article:nth-child(1) {
+  background: #f37338;
+}
+body > div + div article:nth-child(2) {
+  background: #fdb632;
+}
+body > div + div article:nth-child(3) {
+  background: #894236;
+}
+/* Main layout */
+html,
+body,
+body > div + div {
+  width: 100vw;
+  height: 100vh;
+}
+body > div + div {
+  list-style: none;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow: hidden;
+}
+/* Articles */
+body > div + div article {
+  flex: initial;
+  width: 30%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  vertical-align: bottom;
+  box-sizing: border-box;
+  padding: 2vh 1vw;
+  position: relative;
+}
+/* Big Headings */
+body > div:first-child {
+  position: fixed;
+  bottom: 8vh;
+  background: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 0.5rem;
+  z-index: 2;
+}
+body > div:first-child h1,
+body > div:first-child h2 {
+  margin: 0;
+  padding: 0;
+}
+/* Hover interaction */
+body > div + div:hover article {
+  flex: initial;
+  width: 10%;
+}
+body > div + div article:hover {
+  width: 70%;
+}
+article > div {
+  opacity: 0;
+  transition: opacity 0.2s ease 0;
+}
+article:hover > div {
+  opacity: 1;
+  transition: opacity 0.3s ease 0.3s;
+}
+/* navigation */
+body > div + div article > h2 {
+  bottom: 2.2vh;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  font-size: 3vh;
+}
+body > div + div:hover article > h2 {
+  bottom: 2.8vh;
+  font-size: 2vh;
+}
+body > div + div article:hover > h2 {
+  bottom: 2.2vh;
+  font-size: 3vh;
+}
+/* Article layouts */
+article > div {
+  text-align: left;
+  width: 58vw;
+}
+article > div p,
+article > div h2,
+article > div h3 {
+  margin: 0 0 1em 0;
+  width: 50vw;
+  font-size: xx-large;
+}
+article > div p {
+  width: 50vw;
+  font-size: xx-large;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:after {
+  content: "";
+}
+a:hover {
+  text-decoration: underline;
+}
+/* Mobile */
+@media (max-width: 600px) {
+  body > div + div article {
+    padding: 2vh 3vw;
+  }
+  body > div + div article > h2 {
+    transform: rotate(90deg);
+    bottom: 23vh;
+    min-width: 12em;
+    text-align: left;
+    transform: rotate(-90deg);
+    transform-origin: 0 0 0;
+    opacity: 1;
+  }
+  body > div + div article:focus > h2 {
+    opacity: 0;
+  }
+  article div {
+    max-height: 75vh;
+    overflow-y: auto;
+  }
+  article div article div p {
+    width: 90%;
+  }
+}
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: auto;
+  max-height: 75vh;
+  overflow-y: scroll;
+  margin-bottom: 60%;
+}
+#container img {
+  flex: 0 0 auto;
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+@media (min-width: 768px) {
+  #container {
+    overflow-x: visible;
+  }
+  #container img {
+    margin-bottom: 10px;
+  }
+}
+#holder {
+  padding-bottom: 25vh;
+}
+#intro {
+  margin-left: 40px;
+}

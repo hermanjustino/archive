@@ -1,0 +1,26 @@
+#flipbook {
+    width: 100vw;
+    height: 100vh;
+    border: 2px solid black; /* Adjust as needed */
+}
+
+#flipbook .page {
+    width: 100vw;
+    height: 100vh;
+    background-color: red; /* This line sets the background color to red */
+    line-height: 100vh;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #flipbook {
+        width: 200px;
+        height: 300px;
+    }
+
+    #flipbook .page {
+        width: 200px;
+        height: 300px;
+    }
+}

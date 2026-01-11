@@ -1,0 +1,60 @@
+.note-three {
+    background-image:url('https://yesterweb.org/img/bb/lined_paper.png');
+    width:300px;
+    height:500px;
+    transform:rotate(-2deg);
+  }
+  .note-three-top{
+    background-color:#FAFAFA;
+    width:300px;
+    height:40px;
+  }
+
+  .type{
+    font-family: 'Indie Flower', cursive;
+  }
+
+  .note-three{
+    margin-left: 40px;
+    padding-left: 30px;
+  }
+
+/* CSS */
+#typewriter {
+    white-space: pre; /* Keeps spaces and line breaks */
+    margin: 0 auto;
+    letter-spacing: .15em; /* Space between letters */
+    font-family: 'Indie Flower', cursive;
+}
+
+/* Typing animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* Cursor animation */
+@keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: black; }
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace; 
+}
+
+#title, #caption {
+  white-space: pre;  /* Preserve spaces and line breaks */
+  border-right: solid 3px;  /* Cursor */
+  overflow: hidden;  /* Ensure cursor doesn't go beyond container */
+}
+
+#title {
+  margin: 0;
+  font-size: 4em;
+}
+
+#caption {
+  margin-top: 0;
+  font-size: 1em;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flipbook</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+
+<body>
+
+    <div class="book">
+        <input type="checkbox" id="c1">
+        <input type="checkbox" id="c2">
+        <input type="checkbox" id="c3">
+        <input type="checkbox" id="c4">
+        <input type="checkbox" id="c5">
+
+        <div class="bb"></div>
+
+        <div id="cover"></div>
+        <div class="flip-book">
+
+            <div class="flip" id="p1">
+                <div class="back" style="" id="first_page">
+
+                    <img src="assets/Listening Room/2.png" class="p2" id="first_page_image">
+                    
+
+                    <label class="back-btn" for="c1">&#171;</label>
+                </div>
+                <div class="front">
+                    <img src="assets/cover.png" alt="front_image_eye"
+                        class="front_image" id="front_image">
+                    <label class="next-btn" for="c1" style="color:white;border:1px solid white;">&#187;</label>
+                </div>
+            </div>
+
+            <div class="flip" id="p2">
+                <div class="back" id="third_page">
+
+                    <img src="assets/Listening Room/4.png" id="third_page_image">
+                    <label class="back-btn" for="c2">&#171;</label>
+                </div>
+                <div class="front" id="second_page">
+                    <img src="assets/Listening Room/3.png" id="second_page_image">
+                    <label class="next-btn" for="c2">&#187;</label>
+                </div>
+            </div>
+
+            <div class="flip" id="p3">
+                <div class="back" id="fifth_page">
+
+                    <img src="assets/Listening Room/6.png" id="fifth_page_image">
+                    <label class="back-btn" for="c3">&#171;</label>
+                </div>
+                <div class="front" id="fourth_page">
+                    <img src="assets/Listening Room/5.png" id="fourth_page_image">
+                    <label class="next-btn" for="c3">&#187;</label>
+                </div>
+            </div>
+
+            <div class="flip" id="p4">
+                <div class="back" id="seventh_page">
+
+                    <img src="assets/Listening Room/8.png" id="seventh_page_img">
+                    <label class="back-btn" for="c4">&#171;</label>
+                </div>
+
+                <div class="front" id="sixth_page">
+                    <img src="assets/Listening Room/7.png" id="sixth_page_image">
+                    <label class="next-btn" for="c4">&#187;</label>
+                </div>
+            </div>
+
+            <div class="flip" id="p5">
+                <div class="back">
+                    <img src="assets/Listening Room/10.png" id="back_page_image">
+                    <label class="back-btn" for="c5" style="color:white;border:1px solid white;">&#171;</label>
+                </div>
+                <div class="front" id="eighth_page">
+                        <img src="assets/Listening Room/9.png" id="eighth_page_image">
+                        <label class="next-btn" for="c5">&#187;</label>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

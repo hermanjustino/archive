@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^hermanjustino\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.hermanjustino\.com$
+RewriteRule ^language\-journal\/?(.*)$ "https\:\/\/ai\-journalist\-1\.onrender\.com\/$1" [R=301,L]
+

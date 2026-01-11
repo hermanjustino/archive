@@ -1,0 +1,359 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: sans-serif;
+    background: linear-gradient(to bottom, darkgray, rgba(211, 211, 211, 0.5));
+}
+
+input {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    margin-top: 65px;
+    font-size: 22px;
+}
+
+.book {
+    display: flex;
+}
+
+#cover {
+    width: 400px;
+    height: 550px;
+}
+
+.flip-book {
+    width: 400px;
+    height: 550px;
+    position: relative;
+    perspective: 1500px;
+}
+
+.flip {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: center left;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    color: #000;
+
+}
+
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(245, 245, 245);
+    box-sizing: border-box;
+    padding: 0 13px;
+
+}
+
+#front_image{
+    width: 100%;
+    height: 65%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+    background-color: rgb(245, 245, 245);
+}
+
+.next-btn {
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 4px;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    color: #000;
+}
+
+.back-btn {
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 4px;
+    bottom: 13px;
+    right: 13px;
+    cursor: pointer;
+    color: #000;
+}
+
+.logo {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#title {
+    position: absolute;
+    bottom: 30px;
+    left: 150px;
+    color: #000;
+
+}
+
+.p2{
+    height: 50%;
+    width: 50%;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+}
+#p1 {
+    z-index: 5;
+    margin: 5px;
+}
+
+#p2 {
+    z-index: 4;
+    margin: 5px;
+}
+
+#p3 {
+    z-index: 3;
+    margin: 5px;
+}
+
+#third_page {
+    left: 0;
+    bottom: 0;
+}
+
+#p4 {
+    z-index: 2;
+    margin: 5px;
+}
+
+#p5 {
+    z-index: 1;
+    margin: 5px;
+}
+
+#c1:checked~.flip-book #p1 {
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+
+#c2:checked~.flip-book #p2 {
+    transform: rotateY(-180deg);
+    z-index: 2;
+}
+
+#c3:checked~.flip-book #p3 {
+    transform: rotateY(-180deg);
+    z-index: 3;
+}
+
+#c4:checked~.flip-book #p4 {
+    transform: rotateY(-180deg);
+    z-index: 4;
+}
+
+#c5:checked~.flip-book #p5 {
+    transform: rotateY(-180deg);
+    z-index: 5;
+}
+
+#c3:checked~.flip-book #p1 {
+    display: none;
+}
+
+#c4:checked~.flip-book #p2 {
+    display: none;
+}
+
+#c5:checked~.flip-book #p3 {
+    display: none;
+}
+
+
+.bb {
+    position: absolute;
+    z-index: -1;
+    width: 800px;
+    height: 550px;
+    pointer-events: none;
+
+}
+
+#c1:checked~.bb {
+    border: 5px solid rgb(112, 128, 144);
+    background-color: white;
+}
+
+#c2:checked~.bb {
+    border: 5px solid rgb(112, 128, 144);
+}
+
+#c3:checked~.bb {
+    border: 5px solid rgb(112, 128, 144);
+}
+
+#c4:checked~.bb {
+    border: 5px solid rgb(112, 128, 144);
+}
+
+#c5:checked~.bb {
+    border: none;
+    background-color: transparent;
+}
+
+#first_page_image{
+    width: 100%;
+    height: 45%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.intro_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 65%;
+}
+
+#second_page {
+    position: relative;
+}
+
+
+#second_page_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#fourth_page {
+    position: relative;
+}
+
+#fourth_page_founder_image_one {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60%;
+    width: 60%;
+    /* other styles as needed */
+}
+
+#fourth_page_founder_image_two {
+    position: absolute;
+    bottom: 0px; /* adjust as needed for overlap */
+    right: 0px;
+    height: 60%;
+    width: 60%;
+}
+
+.founders_img_textbox {
+    position: absolute;
+    bottom: 70px; /* adjust as needed */
+    left: 10px; 
+    transform: rotate(-90deg);
+    font-size: 40px;
+}
+#fifth_page {
+    background: linear-gradient(to top, lightgray 60%, transparent 60%);
+}
+
+#sixth_page {
+    position: absolute;
+}
+
+#sixth_page::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%; /* covers left 40% */
+    height: 100%; /* covers bottom 60% */
+    background: lightgray;
+}
+
+#page_6_image {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+.friends_text{
+    padding-top: 80%;
+    padding-left: 45%;
+}
+
+
+#page_7_first_img, #third_page_image, .fifth_page_image, #second_page_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.p8 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#eighth_page.front {
+    background: lightgray;
+}
+
+#eighth_page_space_image{
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+
+}
+
+.space_img_textbox {
+    position: absolute;
+    background: white;
+    border: 1px solid black; /* adjust color as needed */
+    padding: 10px; /* adjust as needed */
+    text-align: center;
+    bottom: -400px; /* adjust as needed */
+}
